@@ -1,0 +1,11 @@
+After successful creation of react app, we get a basic tempplate already developed react app.
+
+To Start react app, we do "npm start" in terminal of Frontend folder.
+React always runs at Port 3000 cannot be changed. Not like backend port where we can define any port.
+that is why, we recommend not to use 3000 port, on backend server.
+
+After React app is created, there are many unnecessary files which are of no or less use, so we can delete them for our comfort
+Three important files must be there, i.e. App.js,index.js,any one css file
+
+As we know, React uses only one html file. Now, index.js file is used to edit the html file by adding various components
+In simpler words, we customize Html file, with the help of javascript
