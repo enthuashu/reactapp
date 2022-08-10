@@ -9,3 +9,26 @@ Three important files must be there, i.e. App.js,index.js,any one css file
 
 As we know, React uses only one html file. Now, index.js file is used to edit the html file by adding various components
 In simpler words, we customize Html file, with the help of javascript
+
+
+const express = require('express') // this import method is used in backend
+import express from "express"
+// but if you want to import anything from frontend, syntax changes
+module.exports = App; // backend
+export default App; // frontend
+
+Our React app consists of a Main Parent component, called App.js. 
+
+Component is basically a function which returns html.
+Components are always imported with capital letter
+
+
+10/08/22
+Make a react app, which contains 5 components,
+1=> Navbar
+2=> Center component
+3=> List component which shows list of 5 fruites
+4=> A form component which takes 3 inputs, name,email,password
+5=> footer component
+
+Ps: You can use bootstrap
