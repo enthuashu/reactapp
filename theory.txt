@@ -32,3 +32,36 @@ Make a react app, which contains 5 components,
 5=> footer component
 
 Ps: You can use bootstrap
+
+
+The component where other child components are called is called Parent Component for those components.
+
+
+Component is basically a function which returns html.
+Component is basically a function which returns jsx.
+
+jsx stands for javascript xml.
+
+JSX = 99% html + 1% variation
+
+Migrating from HTML to jsx requires following variations-
+
+1. class is changed with className ( To differentiate between oops class and css class)
+2. JSX always returns a single element (Single element means enclosed with a single tag i.e. start and end with same tag)
+To deal with this we always return compoents with a single tag i.e. <> and </>
+3. Single tags needs a self enclosing tag 
+i.e. <img> changes to <img/>
+    <a> changes to <a/>
+    <br> changes to <br/>
+    <input> changes to <input />
+
+4.html attributes are the additional information written in starting tags of html elements
+e.g className,id,name,src,href,alt etc
+In react, we need to make this sure that jsx attributes  always be written
+in camelcase method.
+(camelcase means every new word should starts with capital letter (except first, which is always written in small))
+
+html attribute e.g. onclick,onmousehover ,onmouseover are converted into jsx attribute in camelcase
+jsx attribute e.g. onClick,onMouseHover,onMouseOver
+
+
