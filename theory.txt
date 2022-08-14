@@ -65,3 +65,12 @@ html attribute e.g. onclick,onmousehover ,onmouseover are converted into jsx att
 jsx attribute e.g. onClick,onMouseHover,onMouseOver
 
 
+In react, CSS is used in same way as in normal html
+All the properties of css are exactly same.
+
+css can be used in two ways...
+1. by making a separate file and writing usual css code with classname and stuufs
+2. In-line css.  Here, we write the css code on the tag itself as an attribute
+ In line css is done using "style" attribute
+ In line css is done inside style attribute by putting double curly brackets. {{}}
+
