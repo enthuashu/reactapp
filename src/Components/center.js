@@ -1,6 +1,7 @@
 import React from "react";
 
 const center = () => {
+  console.log("hello from the center component");
   return (
     <>
       <div className="card" style={{ width: "18rem" }}>
@@ -15,9 +16,7 @@ const center = () => {
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </p>
-          <a href="/" className="btn btn-primary">
-            Go somewhere
-          </a>
+          <button className="btn btn-primary">Click Me</button>
         </div>
       </div>
     </>

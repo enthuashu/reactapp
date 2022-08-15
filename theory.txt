@@ -74,3 +74,23 @@ css can be used in two ways...
  In line css is done using "style" attribute
  In line css is done inside style attribute by putting double curly brackets. {{}}
 
+ 14/08
+ Parent-Child architecture of compoents
+ Component return JSX(Modified html)
+ JSX rules
+ Use of bootstrap and practicing jsx components.
+ Use of CSS (Both Inline css, and External css)
+
+ Use of Javascript in html (jsx) (important)
+
+
+1. Use of Javascript in two ways
+a> Javascript code is written above return statement
+b> Inline javascript => Javascript is always written inside html, with a curly bracket
+
+
+onClick attribute is used when we want to do some action (function)
+on click of that button/tag
+
+Whenever we want our same component to show different information, according to different
+case, then this is acheived by javascript (called dynamic rendering)
