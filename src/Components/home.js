@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
-const home = () => {
-  let name;
+const Home = () => {
+  const [name, setname] = useState("Ashutosh");
+  //  const [name,setname] = useState("Ashutosh")
+  // first argument represents Value, second argument is used to update the value
+
   let profileviews;
   let impressions;
   let position;
@@ -11,35 +14,14 @@ const home = () => {
   // getting
   // logged in
   // user details  e.g. current api
-  name = "Satyam Mishra";
-  position = "App Developer";
+
+  position = " Developer";
   profileviews = 0;
   impressions = 0;
 
   const handleclick = () => {
-    console.log("hello from the jsx");
-    console.log("hello from the jsx");
-    console.log("hello from the jsx");
-    console.log("hello from the jsx");
-    console.log("hello from the jsx");
-    console.log("hello from the jsx");
-    console.log("hello from the jsx");
-    console.log("hello from the jsx");
-    console.log("hello from the jsx");
-    console.log("hello from the jsx");
-    console.log("hello from the jsx");
-    console.log("hello from the jsx");
-    console.log("hello from the jsx");
-    console.log("hello from the jsx");
-    console.log("hello from the jsx");
-    console.log("hello from the jsx");
-    console.log("hello from the jsx");
-    console.log("hello from the jsx");
-    console.log("hello from the jsx");
-    console.log("hello from the jsx");
-    console.log("hello from the jsx");
+    setname("Satyam");
   };
-
   return (
     <>
       <h1>{name} </h1>
@@ -52,10 +34,10 @@ const home = () => {
         }}
         className="btn btn-primary"
       >
-        View More
+        Change Name
       </button>
     </>
   );
 };
 
-export default home;
+export default Home;

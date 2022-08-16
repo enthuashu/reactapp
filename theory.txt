@@ -94,3 +94,28 @@ on click of that button/tag
 
 Whenever we want our same component to show different information, according to different
 case, then this is acheived by javascript (called dynamic rendering)
+
+
+DOM defines the logical structure of documents 
+and the way a document is accessed and manipulated with the help of javascript.
+Dom is of Two types i.e.
+
+1. Real DOM
+Real DOM updates slow, because it updates the overall document and
+and reloading takes place
+
+2. Virtual DOM
+Virtual DOM updates faster because it only updates that particular component which is changed
+not the whole document.
+
+
+USESTATE
+Whenever we update value of a variable in a component using normal updation,
+then that component is not updated and reflects the previous value only.
+
+This can be solved by refreshing our component, everytime when any value is changed,
+This can be acheived using useState.
+Usestates updates the component whenever state changes
+
+variable ===> state
+updating variable ===> setstate
