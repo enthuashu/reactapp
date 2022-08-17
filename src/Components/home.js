@@ -1,41 +1,52 @@
 import React, { useState } from "react";
 
 const Home = () => {
-  const [name, setname] = useState("Ashutosh");
-  //  const [name,setname] = useState("Ashutosh")
-  // first argument represents Value, second argument is used to update the value
-
-  let profileviews;
-  let impressions;
-  let position;
-
-  // api calling
-  // for
-  // getting
-  // logged in
-  // user details  e.g. current api
-
-  position = " Developer";
-  profileviews = 0;
-  impressions = 0;
-
-  const handleclick = () => {
-    setname("Satyam");
+  const [counter, setcounter] = useState(0);
+  const starttimer = () => {
+    let i = 1;
+    setInterval(() => {
+      setcounter(i);
+      i++;
+    }, 1000);
   };
+
+  const stoptimer = () => {};
+  const resettimer = () => {};
   return (
     <>
-      <h1>{name} </h1>
-      <p>{position}</p>
-      <p>Who viewed your profile : {profileviews} </p>
-      <p>Imprssions on your post : {impressions} </p>
-      <button
-        onClick={() => {
-          handleclick();
-        }}
-        className="btn btn-primary"
-      >
-        Change Name
-      </button>
+      <h1 style={{ color: "grey" }}>
+        Timer : <span style={{ color: "blue" }}>{counter} seconds</span>
+      </h1>
+
+      <div className="row">
+        <div className="col">
+          <button
+            style={{ backgroundColor: "green", color: "white" }}
+            className="btn-primary"
+            onClick={() => starttimer()}
+          >
+            Start Timer
+          </button>
+        </div>
+        <div className="col">
+          <button
+            style={{ backgroundColor: "red", color: "white" }}
+            className="btn-primary"
+            onClick={() => stoptimer()}
+          >
+            Stop timer
+          </button>
+        </div>
+        <div className="col">
+          <button
+            style={{ backgroundColor: "yellow", color: "black" }}
+            className="btn-primary"
+            onClick={() => resettimer()}
+          >
+            Reset timer
+          </button>
+        </div>
+      </div>
     </>
   );
 };
