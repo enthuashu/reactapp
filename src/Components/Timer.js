@@ -2,16 +2,21 @@ import React, { useState } from "react";
 
 const Home = () => {
   const [counter, setcounter] = useState(0);
+  let interval;
+  let i = 1;
   const starttimer = () => {
-    let i = 1;
-    setInterval(() => {
+    interval = setInterval(() => {
       setcounter(i);
       i++;
     }, 1000);
   };
 
   const stoptimer = () => {};
-  const resettimer = () => {};
+  const resettimer = () => {
+    setcounter(0);
+    stoptimer(interval);
+    i = 0;
+  };
   return (
     <>
       <h1 style={{ color: "grey" }}>

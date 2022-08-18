@@ -119,3 +119,8 @@ Usestates updates the component whenever state changes
 
 variable ===> state
 updating variable ===> setstate
+
+
+PROPS
+Props are used to pass/transfer data from Parent component to child components but 
+not vice-versa
