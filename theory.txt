@@ -124,3 +124,26 @@ updating variable ===> setstate
 PROPS
 Props are used to pass/transfer data from Parent component to child components but 
 not vice-versa
+PROP drilling : It is a method in which we pass states or data
+to many child compoents
+
+
+USEFFECT can be used to call a function on first render/return of the component
+ e.g. calling API
+ UseEffect have two arguments, first is function, second is array of state (whose sideeffect we want)
+
+ Whenever we want to execute a function on a particular condition or sideeffect,
+ we use useeffct hook.
+
+
+ UseEffect is also used to call a function, when any state changes 
+ i.e. why it is also called sideeffect function
+
+
+ Conditional Rendering means to display component data
+ according to a particular condition.
+In Desi Language : To use if else in jsx/html
+You can't use If else inside JSX. To use if else for jsx,
+we need ternary operators
+
+ 

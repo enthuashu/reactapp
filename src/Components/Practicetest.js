@@ -1,9 +1,10 @@
 import React from "react";
+import Components from "./Subcompoents/component1";
 
-const Practicetest = ({ title }) => {
+const Practicetest = ({ title, settitle }) => {
   return (
     <div>
-      <h1> The title is {title}</h1>
+      <Components title={title} settitle={settitle} />
     </div>
   );
 };
