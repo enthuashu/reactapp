@@ -7,12 +7,13 @@ import Practicetest from "./Components/Practicetest";
 import PracticeEffect from "./Components/PracticeEffect";
 import Inc from "./Components/Inc";
 import CondComp from "./Components/CondComp";
+import Arraymapping from "./Components/Arraymapping";
+import Form from "./Components/Form";
 
 const App = () => {
-  const [title, settitle] = useState("Parent");
   return (
     <>
-      <CondComp />
+      <Form />
     </>
   );
 };

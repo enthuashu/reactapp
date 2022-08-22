@@ -9,9 +9,14 @@ const Inc = () => {
   return (
     <div>
       <h1>{counter}</h1>
-      {/* <p> High </p>  if >10
-      <p> Medium </p> if <10 and >5
-      <p> Low </p> if <5 */}
+      <p>
+        {counter >= 10
+          ? "High"
+          : counter < 10 && counter > 5
+          ? "Medium"
+          : "Low"}
+      </p>
+
       <button
         style={{ backgroundColor: "blue" }}
         onClick={() => setcounter(counter + 1)}

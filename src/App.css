@@ -1,6 +1,11 @@
 .App {
   text-align: center;
 }
+.formpractice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .test {
   color: green;
