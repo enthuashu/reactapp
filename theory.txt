@@ -166,7 +166,7 @@ This can be acheived using two attributes in input box.
  placeholder="Full Name"
  type="text"
 />
-
++
 
 
 Topics Left
@@ -183,3 +183,14 @@ Topics Left
 11. Deploying Full stack app on heroku
 
 
+
+
+PROXY
+While staying at one port(server), if you want to access services
+of any other port, then we proxy that port in our server
+
+Here, To connect frontend at port 3000, to backend at port 5000
+we proxy 5000 port in our frontend server
+
+To connect frontend with backend, we need a connector
+called as "axios"
